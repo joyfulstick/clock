@@ -11,7 +11,7 @@ const Hend = props => (
       transition:
         props.deg > 354 || props.deg < 6
           ? 'transform 0s'
-          : 'transform 0.05s cubic-bezier(0.1, 2.6, 0.6, 1)',
+          : 'transform 0.05s cubic-bezier(0.1, 2.4, 0.6, 1)',
     }}
     className="hend"
   />

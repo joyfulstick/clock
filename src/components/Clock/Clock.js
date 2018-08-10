@@ -20,7 +20,7 @@ class Clock extends Component {
 
   componentDidMount() {
     this.setTime()
-    setInterval(this.setTime, 1000)
+    this.timerID = setInterval(this.setTime, 1000)
   }
 
   setTime = () => {
@@ -46,7 +46,7 @@ class Clock extends Component {
   }
 
   componentWillUnmount() {
-    clearInterval(this.interval)
+    clearInterval(this.timerID)
   }
 
   render() {
@@ -57,9 +57,9 @@ class Clock extends Component {
             <Hend
               key={k}
               deg={v.deg}
-              width={v.width}
-              left={v.left}
-              color={v.color}
+              width={v.width || 50}
+              left={v.left || 0}
+              color={v.color || 'black'}
             />
           ))}
           <div className="axis" />
