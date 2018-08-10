@@ -51,8 +51,8 @@ class Clock extends Component {
 
   render() {
     return (
-      <div className="board">
-        <div className="clock">
+      <div className="clock">
+        <div className="board">
           {Object.entries(this.state).map(([k, v]) => (
             <Hend
               key={k}

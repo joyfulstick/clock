@@ -1,5 +1,13 @@
-:root {
-  font-size: 1vw;
+@media (orientation: portrait) {
+  :root {
+    font-size: 2vw;
+  }
+}
+
+@media (orientation: landscape) {
+  :root {
+    font-size: 2vh;
+  }
 }
 
 body {
