@@ -1,0 +1,9 @@
+.hend {
+  width: 50%;
+  height: 0.6rem;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  border-radius: 1rem;
+}
