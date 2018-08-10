@@ -1,0 +1,39 @@
+{
+  "name": "clock",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "semi": [
+        2,
+        "never"
+      ],
+      "object-shorthand": 2,
+      "prefer-destructuring": 2,
+      "no-duplicate-imports": [
+        2,
+        {
+          "includeExports": true
+        }
+      ],
+      "sort-imports": 1,
+      "no-console": 1,
+      "no-debugger": 0
+    }
+  }
+}
